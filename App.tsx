@@ -14,7 +14,7 @@ const App: React.FC = () => {
 
   // 2. LOAD DATA
   useEffect(() => {
-    const savedData = localStorage.getItem('yukio_owned_list');
+    const savedData = localStorage.getItem('STORAGE_KEY');
     if (savedData) {
       try {
         setOwnedIds(JSON.parse(savedData));
@@ -28,7 +28,7 @@ const App: React.FC = () => {
   // 3. SAVE DATA
   useEffect(() => {
     if (!isLoading) {
-      localStorage.setItem('yukio_owned_list', JSON.stringify(ownedIds));
+      localStorage.setItem('STORAGE_KEY', JSON.stringify(ownedIds));
     }
   }, [ownedIds, isLoading]);
 
