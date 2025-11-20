@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YUKIO 收藏清單</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              yukio: {
+                bg: '#fdfbf7',      // Warm Cream/Off-white
+                card: '#ffffff',    // White
+                pink: '#dcbfa6',    // Warm Sand (Primary Action)
+                dark: '#a68a74',    // Earth/Taupe (Darker Accent)
+                text: '#5c4d43',    // Dark Coffee Brown
+                accent: '#ebe5ce'   // Pale Beige
+              }
+            },
+            fontFamily: {
+              sans: ['ui-rounded', 'PingFang HK', 'Heiti TC', 'system-ui', 'sans-serif'],
+            },
+            borderRadius: {
+              '3xl': '1.5rem',
+              '4xl': '2rem',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-yukio-bg text-yukio-text antialiased selection:bg-yukio-pink selection:text-white">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
