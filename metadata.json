@@ -1,5 +1,5 @@
 {
-  "name": "YUKIO 收藏清單",
-  "description": "一個可愛簡單嘅清單 App，幫你紀錄 YUKIO 公仔收藏。有進度追蹤功能，而且資料會自動儲存！",
+  "name": "YUKIO 收藏圖鑑",
+  "description": "一個簡單嘅清單，幫你紀錄 YUKIO 收藏。有進度追蹤功能，而且資料會自動儲存！",
   "requestFramePermissions": []
 }
