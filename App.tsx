@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { YUKIO_LIST } from './constants';
 import { YukioCard } from './components/YukioCard';
-import YukioIcon from './assets/yukio-icon.svg';
 import { Heart, Filter, Sparkles, LayoutGrid } from 'lucide-react';
 
 const STORAGE_KEY = 'yukio_owned_list_v2';
@@ -89,7 +88,11 @@ const App: React.FC = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-4">
             <div className="flex items-center gap-3">
               <div className="bg-yukio-pink p-2 rounded-2xl shadow-sm rotate-3">
-                <img src={YukioIcon} alt="Yukio Icon" className="w-6 h-6" />
+                <img
+    src={`${import.meta.env.BASE_URL}yukio-icon.svg`}
+    alt="Yukio Icon"
+    className="w-6 h-6"
+  />
               </div>
               <h1 className="text-2xl font-black text-yukio-text tracking-tight">
                 YUKIO <span className="text-yukio-dark font-normal">收藏圖鑑</span>
