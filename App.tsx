@@ -87,7 +87,7 @@ const App: React.FC = () => {
           {/* Top Bar: Logo */}
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-4">
             <div className="flex items-center gap-3">
-              <div className="bg-yukio-pink p-2 rounded-2xl shadow-sm rotate-3">
+              <div className="bg-yukio-pink p-2 rounded-2xl shadow-sm rotate-0">
                 <img
     src={`${import.meta.env.BASE_URL}yukio-icon.svg`}
     alt="Yukio Icon"
